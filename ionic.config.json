@@ -1,0 +1,7 @@
+{
+  "name": "fazt-project",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

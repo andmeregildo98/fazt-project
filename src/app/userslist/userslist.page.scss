@@ -1,0 +1,13 @@
+ion-item::part(native) {
+    /* background: #888f8b;
+    color: #070707;
+    border-radius: 0px;
+    padding: 4px 0px; */
+    
+  }
+  
+  ion-item::part(detail-icon) {
+    color: rgb(121, 48, 48);
+    opacity: 10;
+    font-size: 20px;
+  }

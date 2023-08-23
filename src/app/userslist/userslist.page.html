@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Users</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Users</ion-title>
+      <!-- <ion-buttons>
+        <ion-back-button defaultHref='Home'></ion-back-button>
+      </ion-buttons> -->
+    </ion-toolbar>
+  </ion-header>
+  <ion-item *ngFor="let character of characters">
+    <ion-list line="full">
+
+      <ion-label>{{ character.name }}</ion-label>
+      <ion-label>{{ character.created}}</ion-label>
+      <ion-img [src]="character.image" alt="Error"></ion-img>
+    </ion-list>
+  </ion-item>
+</ion-content>
